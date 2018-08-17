@@ -6,7 +6,7 @@ class Server {
 
             try {
 
-            this.cache[path.id] = fs.readFileSync('./public/'+ path.loc, 'utf-8');
+            this.cache[path.id] = fs.readFileSync('./public/'+ path.loc);
 
             } catch(e) {
 

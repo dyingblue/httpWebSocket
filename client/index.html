@@ -6,10 +6,13 @@
 <body>
     <div id="page"></div>
         <script>
+            var decoder = new TextDecoder('utf-8');
                 var socket = io.connect('http://127.0.0.1');
                 socket.on('render', (pageHTML) => {
                     var page = document.getElementById("page");
-                    page.innerHTML = pageHTML;
+                    page.innerHTML = decoder.decode(pageHTML);
+
+                 
                 });
             </script>
 </body>
