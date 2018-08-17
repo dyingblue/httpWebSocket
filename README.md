@@ -2,7 +2,7 @@
 Server and Client code to enable steamless single page stateful HTTP transmission over websockets. Uses the socket.io library.
 Under Active development!
 ## Installation
-After cloning, to run page stateful page change example.
+After cloning, to run page change example keeping state.
 ```sh
 $ npm install socket.io -s
 node index.js
