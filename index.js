@@ -14,10 +14,16 @@ var test = new server({
     ]
 });
 
+
+
 io.on('connection', function(socket) {
     console.log("Recieved connection");
     socket.emit('render', test.serve("root"));
-    setInterval(() => {
-        socket.emit('render', test.serve("test"));
-    }, 5000)
+    socket.on('get', (data) => { 
+        socket.emit('render', test.serve(data));
+    });
+});
+
+io.on('get', (socket) => {
+        
 });
