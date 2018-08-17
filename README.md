@@ -2,7 +2,7 @@
 Server and Client code to enable steamless single page stateful HTTP transmission over websockets. Uses the socket.io library.
 Under Active development!
 ## Installation
-After clonning,
+After cloning,
 ```sh
 $ npm install socket.io -s
 node index.js
@@ -12,6 +12,7 @@ node index.js
 Several other features will be added later.
 - [x]  Basic Client
 -  [x]  Basic Server
+-  [ ]  Wrap Socket IO handling in server
 - [ ]  Implement Get Request
 - [ ]  Implement POST Request
 - [ ]  Integrate Streaming 
