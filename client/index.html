@@ -1,0 +1,16 @@
+<html>
+<head>
+<script src="http://127.0.0.1/socket.io/socket.io.js" >
+</script>
+</head>
+<body>
+    <div id="page"></div>
+        <script>
+                var socket = io.connect('http://127.0.0.1');
+                socket.on('render', (pageHTML) => {
+                    var page = document.getElementById("page");
+                    page.innerHTML = pageHTML;
+                });
+            </script>
+</body>
+</html>
